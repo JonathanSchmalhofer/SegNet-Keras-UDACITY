@@ -4,7 +4,7 @@ exec(open("SegNetHelpers.py").read())
 CheckTensorflowGPU()
 
 ### Configuration
-dataset_repo_path            = '/input'
+dataset_repo_path            = '/input/CamVid'
 output_path                  = '/output'
 log_dir                      = output_path + '/logs'
 model_filename               = output_path + '/model.h5'                           # output filename for the trained model
@@ -12,7 +12,7 @@ model_checkpoint_filename    = output_path + '/model_checkpoint.hdf5'           
 
 # Training
 train_data_path_list    = []
-train_data_path_list.append('/input/data.txt') # CamVid
+train_data_path_list.append('/input/CamVid/data.txt') # CamVid
 
 ###########################
 ## Tunable Hyperparameters
